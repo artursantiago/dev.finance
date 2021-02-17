@@ -1,0 +1,125 @@
+/* Titles ===================== */
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark-blue);
+
+  font-weight: normal;
+}
+
+/* Header ===================== */
+header {
+  background: #2D4A22;
+  padding: 2rem 0 10rem;
+  text-align: center;
+}
+
+/* Balance ===================== */
+#balance {
+  margin-top: -8rem;
+
+  h2 {
+    color:white;
+    margin-top: 0;
+  }
+}
+
+/* Cards ===================== */
+.card {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+
+  margin-bottom: 2rem;
+
+  color: var(--dark-blue);
+
+  h3 {
+    font-weight: normal;
+    font-size: 1rem;
+
+    @include flex(space-between, center, row);
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+  
+    margin-top: 1rem;
+  }
+
+  &.total {
+    background: var(--green);
+    color: white;
+  }
+}
+
+/* Table ===================== */
+#transaction {
+  // display: block;
+  // width: 100%;
+  // overflow-x: auto;
+}
+
+#data-table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  color: #969cb3;
+
+  thead tr th:first-child,
+  tbody tr td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  thead tr th:last-child, 
+  tbody tr td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+
+  th {
+    background: white;
+
+    font-weight: normal;
+    padding: 1rem 2rem;
+
+    text-align: left;
+  }
+
+  tbody {
+    tr {
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    td {
+      background: white;
+      padding: 1rem 2rem;
+    }
+  }
+
+  td {
+    &.description {
+      color: var(--dark-blue);
+    }
+
+    &.income {
+      color: #12a454;
+    }
+
+    &.expense {
+      color: #e92929;
+    }
+  }
+}
+
+/* Footer ===================== */
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: var(--dark-blue);
+
+  opacity: 0.6;
+}

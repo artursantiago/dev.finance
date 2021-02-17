@@ -1,0 +1,16 @@
+:root {
+  --dark-blue: #363f5f;
+  --green: #49AA26;
+  --light-green: #3dd705;
+  --red: #e92929;
+}
+
+@mixin flex($justify, $align, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import 'global.scss';
+@import 'main.scss';
