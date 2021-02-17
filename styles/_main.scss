@@ -56,9 +56,9 @@ header {
 
 /* Table ===================== */
 #transaction {
-  // display: block;
-  // width: 100%;
-  // overflow-x: auto;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
 }
 
 #data-table {
@@ -115,6 +115,70 @@ header {
   }
 }
 
+/* Modal ===================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  @include flex(center, center);
+
+  opacity: 0;
+  visibility: hidden;
+
+  // z-index: 999;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal {
+    background: #F0F2F5;
+    padding: 2.4rem;
+
+    position: relative;
+    // z-index: 1;
+  }
+}
+
+/* Form ===================== */
+#form {
+  max-width: 500px; // Pq usou px e não rem?
+
+  h2 {
+    margin-top: 0;
+  }
+
+  input {
+    border: none;
+    border-radius: 0.2rem;
+
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  .input-group {
+    margin-top: 0.8rem;
+
+    &.help {
+      opacity: 0.4;
+    }
+
+    &.actions {
+      @include flex(space-between, center);
+
+      .button {
+        width: 48%;
+      }
+    }
+  }
+}
+
 /* Footer ===================== */
 footer {
   text-align: center;
@@ -122,4 +186,17 @@ footer {
   color: var(--dark-blue);
 
   opacity: 0.6;
+}
+
+/* Responsive ===================== */
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%; // 14px
+  }
+
+  #balance {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
 }

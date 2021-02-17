@@ -4,28 +4,84 @@
   box-sizing: border-box;
 }
 
-// html {
-//   font-size: 93.75%; /* 15px */
-// }
+html {
+  font-size: 93.75%; /* 15px */
+}
 
 body {
   background: #f0f2f5;
   font-family:'Poppins', sans-serif
 }
 
-// .sr-only {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   padding: 0;
-//   margin: -1px;
-//   overflow: hidden;
-//   clip: rect(0, 0, 0, 0);
-//   white-space: nowrap;
-//   border-width: 0;
-// }
+button {
+  cursor: pointer;
+}
+
+/* Buttons ===================== */
+
+.button {
+  background: none;
+  border: none;
+  outline: none;
+
+  color: #49AA46;
+
+  &:hover {
+    color: #3dd705;
+  }
+
+  &.new {
+    margin-bottom: 0.8rem;
+  }
+
+  &.cancel {
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    
+    height: 50px;
+
+    @include flex(center, center);
+
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &.save {
+    width: 100%;
+    height: 50px;
+
+    color: white;
+    background: var(--green);
+
+    padding: 0;
+
+    border-radius: 0.25rem;
+
+    &:hover {
+      background: var(--light-green);
+    }
+  }
+}
 
 .container {
   width: unquote($string: "min(90vw, 800px)");
   margin: auto;
 }
+
+/* Screen Readers Only ===================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
