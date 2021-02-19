@@ -110,6 +110,7 @@
     h3  {
       font-size: 2.25rem;
       padding-bottom: 2rem;
+      text-align: center;
     }
 
     .box {
@@ -143,12 +144,21 @@
         position: absolute;
         bottom: 2rem;
         right: 2rem;
-        
+        @include flex(center, center);
+
         button {
           background: none;
           border: none;
-          margin-left: 1rem;
           outline: none;
+
+          & ~ button {
+          }
+
+          img {
+            object-fit: contain;
+            width: 2rem;
+            height: 2rem;
+          }
         }
       }
     }
@@ -162,12 +172,12 @@
     background: #202020;
 
     .image {
-      flex: 1 1 1rem;
+      flex: 1 1 36rem;
       text-align: center;
     }
 
     .info {
-      flex: 1 1 2rem;
+      flex: 1 1 18rem;
       @include flex(center, flex-start, column);
       color: white;
 
@@ -225,6 +235,26 @@
             font-size: 2rem;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .bank {
+    .details {
+      .info {
+        h3 {
+          font-size: 2.5rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .dark-mode-exibition {
+      .image {
+        display: none;
+        visibility: hidden;
       }
     }
   }

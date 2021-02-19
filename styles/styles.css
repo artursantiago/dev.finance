@@ -481,6 +481,7 @@ footer {
 .bank .depoiment h3 {
   font-size: 2.25rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .bank .depoiment .box {
@@ -526,13 +527,32 @@ footer {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .bank .depoiment .box .controls button {
   background: none;
   border: none;
-  margin-left: 1rem;
   outline: none;
+}
+
+.bank .depoiment .box .controls button img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 2rem;
+  height: 2rem;
 }
 
 .bank .dark-mode-exibition {
@@ -557,15 +577,15 @@ footer {
 
 .bank .dark-mode-exibition .image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 1rem;
-          flex: 1 1 1rem;
+      -ms-flex: 1 1 36rem;
+          flex: 1 1 36rem;
   text-align: center;
 }
 
 .bank .dark-mode-exibition .info {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 2rem;
-          flex: 1 1 2rem;
+      -ms-flex: 1 1 18rem;
+          flex: 1 1 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,6 +687,17 @@ footer {
   .bank .hero .hero-items .hero-item-1 p {
     text-align: center;
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bank .details .info h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .bank .dark-mode-exibition .image {
+    display: none;
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=styles.css.map */
