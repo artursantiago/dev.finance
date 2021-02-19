@@ -2,16 +2,18 @@
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
-  color: var(--dark-blue);
+  color: var(--font-color);
 
   font-weight: normal;
 }
 
 /* Header ===================== */
 header {
-  background: #2D4A22;
+  background: var(--bg-header);
   padding: 2rem 0 10rem;
   text-align: center;
+
+  @include flex(center, center, column);
 }
 
 /* Balance ===================== */
@@ -26,13 +28,13 @@ header {
 
 /* Cards ===================== */
 .card {
-  background: white;
+  background: var(--secondary-color);
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
 
   margin-bottom: 2rem;
 
-  color: var(--dark-blue);
+  color: var(--font-color);
 
   h3 {
     font-weight: normal;
@@ -49,7 +51,7 @@ header {
   }
 
   &.total {
-    background: var(--green);
+    background: var(--primary-color);
     color: white;
   }
 }
@@ -77,8 +79,7 @@ header {
   }
 
   th {
-    background: white;
-
+    background: var(--secondary-color);
     font-weight: normal;
     padding: 1rem 2rem;
 
@@ -88,6 +89,7 @@ header {
   tbody {
     tr {
       opacity: 0.7;
+      transition: opacity 0.2s ease;
 
       &:hover {
         opacity: 1;
@@ -95,14 +97,14 @@ header {
     }
 
     td {
-      background: white;
+      background: var(--secondary-color);
       padding: 1rem 2rem;
     }
   }
 
   td {
     &.description {
-      color: var(--dark-blue);
+      color: var(--font-color);
     }
 
     &.income {
@@ -138,11 +140,9 @@ header {
   }
 
   .modal {
-    background: #F0F2F5;
+    background: var(--bg-color);
     padding: 2.4rem;
-
     position: relative;
-    // z-index: 1;
   }
 }
 
@@ -165,8 +165,14 @@ header {
   .input-group {
     margin-top: 0.8rem;
 
-    &.help {
+    input {
+      background: var(--secondary-color);
+      color: var(--font-color);
+    }
+
+    .help {
       opacity: 0.4;
+      color: var(--font-color);
     }
 
     &.actions {
@@ -183,8 +189,7 @@ header {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-blue);
-
+  color: var(--font-color);
   opacity: 0.6;
 }
 

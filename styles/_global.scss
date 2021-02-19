@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #f0f2f5;
+  background: var(--bg-color);
   font-family:'Poppins', sans-serif
 }
 
@@ -55,7 +55,7 @@ button {
     height: 50px;
 
     color: white;
-    background: var(--green);
+    background: var(--primary-color);
 
     padding: 0;
 

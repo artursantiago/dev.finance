@@ -3,6 +3,24 @@
   --green: #49AA26;
   --light-green: #3dd705;
   --red: #e92929;
+
+  --transition-delay: 0.4s;
+  --bg-header: #2D4A22; // Header
+  --bg-color: #f0f2f5; // Fundo e Modal
+  --font-color: #363f5f; // Cards
+  --primary-color: var(--green); // Fundo Card Total
+  --secondary-color: white; // Cards e Fundo da tabela
+  --cancel-color: var(--red); // Fundo Card Total
+}
+
+[data-theme="dark"] {
+  --bg-header: #121214; // Header
+  --bg-color: #202024; // Fundo e Modal
+  --secondary-color: #1c1c1c; // Cards e Fundo da tabela
+  --font-color: white; // Cards
+  // --primary-color: var(--green); // Fundo Card Total
+  // --primary-color-light: var(--light-green);
+  // --cancel-color: var(--red); // Fundo Card Total
 }
 
 @mixin flex($justify, $align, $direction: row) {
@@ -15,3 +33,4 @@
 @import 'global.scss';
 @import 'balance.scss';
 @import 'index.scss';
+@import 'switch-theme.scss';

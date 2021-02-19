@@ -61,7 +61,7 @@
 
         width: 100%;
 
-        background: var(--green);
+        background: var(--primary-color);
         @include flex(space-between, center);
         transition: background 0.3s ease-in-out;
 
@@ -150,9 +150,6 @@
           background: none;
           border: none;
           outline: none;
-
-          & ~ button {
-          }
 
           img {
             object-fit: contain;
