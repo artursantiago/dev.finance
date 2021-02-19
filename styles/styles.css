@@ -363,7 +363,7 @@ footer {
 .bank .hero {
   background: #3dd705;
   height: 100vh;
-  background-image: url("../svg/bg.svg");
+  background-image: url("../assets/bg-hero.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
 }
