@@ -318,6 +318,13 @@ footer {
   }
 }
 
+.bank {
+  /* Hero========================== */
+  /* Details========================== */
+  /* Depoiment========================== */
+  /* Depoiment========================== */
+}
+
 .bank .hero {
   background: #3dd705;
   height: 100vh;
@@ -343,6 +350,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .bank .hero-items .hero-item-1 {
@@ -402,6 +413,232 @@ footer {
 
 .bank .hero-items .hero-item-2 a:hover {
   background: var(--light-green);
+}
+
+.bank .details {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bank .details .info {
+  color: #404040;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.bank .details .info h3 {
+  font-size: 3.5rem;
+}
+
+.bank .details .info p {
+  font-size: 1.25rem;
+}
+
+.bank .details .ilustration {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  text-align: right;
+}
+
+.bank .details .ilustration img {
+  max-width: 40rem;
+}
+
+.bank .depoiment {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0;
+}
+
+.bank .depoiment h3 {
+  font-size: 2.25rem;
+  padding-bottom: 2rem;
+}
+
+.bank .depoiment .box {
+  position: relative;
+  background: var(--light-green);
+  padding: 2rem;
+  border-radius: 2rem;
+  color: white;
+  max-width: 40rem;
+  max-height: 40rem;
+}
+
+.bank .depoiment .box img {
+  min-width: 3rem;
+}
+
+.bank .depoiment .box p {
+  font-size: 1.25rem;
+}
+
+.bank .depoiment .box .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 1rem;
+}
+
+.bank .depoiment .box .person p {
+  padding-left: 1rem;
+}
+
+.bank .depoiment .box .controls {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.bank .depoiment .box .controls button {
+  background: none;
+  border: none;
+  margin-left: 1rem;
+  outline: none;
+}
+
+.bank .dark-mode-exibition {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #202020;
+}
+
+.bank .dark-mode-exibition .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1rem;
+          flex: 1 1 1rem;
+  text-align: center;
+}
+
+.bank .dark-mode-exibition .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 2rem;
+          flex: 1 1 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.bank .dark-mode-exibition .info h3 {
+  font-size: 2.5rem;
+}
+
+.bank .dark-mode-exibition .info p {
+  opacity: 0.8;
+  font-size: 1.25rem;
+}
+
+.bank .dark-mode-exibition .info ul {
+  list-style: none;
+  padding: 2rem 0;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bank footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3rem;
+}
+
+.bank footer .social {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bank footer .social li {
+  padding-left: 0.5rem;
+}
+
+.bank footer .social a {
+  cursor: pointer;
 }
 
 @media (max-width: 1150px) {

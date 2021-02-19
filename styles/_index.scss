@@ -1,0 +1,231 @@
+.bank {
+  /* Hero========================== */
+  .hero {
+    background: #3dd705;
+    height: 100vh;
+    background-image: url('../svg/bg.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    background: none;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .hero-items {
+    margin: 25vh 6rem;
+    @include flex(space-between,center);
+
+    .hero-item-1 {
+      display: inline-block;
+      text-align: left;
+
+      p {
+        color: white;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+
+    .hero-item-2 {
+      display: inline-block;
+
+      background: white;
+      border-radius: 1rem;
+
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1),
+                  0.25rem 1rem 1rem rgba(0, 0, 0, 0.1);
+      
+      padding: 2rem;
+      
+      p {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        
+        border-radius: 10rem;
+        border: none;
+        padding: 0.5rem 1rem;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+        text-align: left;
+        color: white;
+
+        width: 100%;
+
+        background: var(--green);
+        @include flex(space-between, center);
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          background: var(--light-green);
+        }
+      }
+    }
+  }
+
+  /* Details========================== */
+  .details {
+    padding: 4rem;
+    @include flex(center, center);
+    flex-wrap: wrap;
+
+    .info {
+      color: #404040;
+      flex: 1 1 30rem;
+
+      h3 {
+        font-size: 3.5rem;
+      }
+      
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    .ilustration {
+      flex: 1 1 30rem;
+      text-align: right;
+
+      img {
+        max-width: 40rem;
+      }
+    }
+  }
+
+  /* Depoiment========================== */
+  .depoiment {
+    background: white;
+    @include flex(center, center, column);
+    padding: 4rem 0;
+
+    h3  {
+      font-size: 2.25rem;
+      padding-bottom: 2rem;
+    }
+
+    .box {
+      position: relative;
+      background: var(--light-green);
+      padding: 2rem;
+      border-radius: 2rem;
+      color: white;
+      max-width: 40rem;
+      max-height: 40rem;
+
+      img {
+        min-width: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      .person {
+        @include flex(flex-start, center);
+
+        padding-top: 1rem;
+
+        p {
+          padding-left: 1rem;
+        }
+      }
+
+      .controls {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        
+        button {
+          background: none;
+          border: none;
+          margin-left: 1rem;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  /* Depoiment========================== */
+  .dark-mode-exibition {
+    padding: 4rem;
+    @include flex(center, center);
+    flex-wrap: wrap;
+    background: #202020;
+
+    .image {
+      flex: 1 1 1rem;
+      text-align: center;
+    }
+
+    .info {
+      flex: 1 1 2rem;
+      @include flex(center, flex-start, column);
+      color: white;
+
+      h3 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        opacity: 0.8;
+        font-size: 1.25rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 2rem 0;
+
+        line-height: 2rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  footer {
+    @include flex(space-between, center);
+
+    padding: 3rem;
+    .social {
+      list-style: none;
+      @include flex(space-between, center);
+
+      li {
+        padding-left: 0.5rem;
+      }
+
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .bank {
+    .hero {
+      background-position: right center;
+      .hero-items {
+        margin: 2rem 2rem;
+        @include flex(center, center, column);
+  
+        .hero-item-1 {
+          margin-bottom: 2rem;
+          p {
+            text-align: center;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
