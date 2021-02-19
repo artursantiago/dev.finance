@@ -8,21 +8,22 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
-    rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <div class="bank">
     <main>
       <section class="hero">
-        <header>
+        <header data-aos="fade-down">
           <img src="assets/logo.svg" alt="">
         </header>
-        <div class="hero-items">
+        <div class="hero-items" data-aos="fade-up">
           <div class="hero-item-1">
             <p>Nunca foi tão fácil<br>controlar suas <br>finanças</p>
           </div>
-          <div class="hero-item-2">
+          <div class="hero-item-2" data-aos="fade-up">
             <p>Acesse agora mesmo<br>a sua conta dev.finance</p>
             <a href="balance">
               Continuar
@@ -33,7 +34,7 @@
       </section>
 
       <section class="details">
-        <div class="info">
+        <div class="info" data-aos="fade-right">
           <h3>Seu controle<br>financeiro na palma<br>da sua mão</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -41,14 +42,14 @@
             magni architecto odio earum ratione assumenda nostrum nihil
           </p>
         </div>
-        <div class="ilustration">
+        <div class="ilustration" data-aos="fade-left">
           <img src="assets/budgetting.svg" alt="">
         </div>
       </section>
 
       <section class="depoiment">
-        <h3>Transformando a vida de milhões de clientes</h3>
-        <div class="box">
+        <h3 data-aos="zoom-out">Transformando a vida de milhões de clientes</h3>
+        <div class="box" data-aos="zoom-out">
           <img src="assets/quote.svg" alt="">
           <p>Sempre utilizei planilhas eletrônicas para realizar o controle das minhas finanças, porém, acabava deixando de lado pela dificuldade de manter tudo atualizado. Com o Mobills, em 5 minutos consigo atualizar tudo o que aconteceu no dia e tirar insights das visões e gráficos que são gerados.</p>
           <div class="person">
@@ -67,10 +68,10 @@
       </section>
 
       <section class="dark-mode-exibition">
-        <div class="image">
+        <div class="image" data-aos="fade-right">
           <img src="assets/mackbook.png" alt="Dev Finance on Dark Mode">
         </div>
-        <div class="info">
+        <div class="info" data-aos="fade-left">
           <h3>Disponível em modo noturno</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -104,8 +105,11 @@
           <li><a href="#"><img src="assets/twitter.svg" alt="dev finance twitter"></a></li>
         </ul>
     </footer>
-
   </div>
-  <script src="scripts2.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
