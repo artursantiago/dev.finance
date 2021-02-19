@@ -85,3 +85,20 @@ button {
   border-width: 0;
 }
 
+// Animations
+
+.rotate-scale-down-ver {
+	animation: rotate-scale-down-ver 0.65s linear both;
+}
+
+@keyframes rotate-scale-down-ver {
+  0% {
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    transform: scale(0.5) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+  }
+}
